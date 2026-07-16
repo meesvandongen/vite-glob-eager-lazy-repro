@@ -1,0 +1,12 @@
+{
+  "name": "sidefx",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^8.0.14"
+  }
+}
