@@ -30,7 +30,13 @@ them individually to run it.
   `"sideEffects": false` + Rollup/Rolldown's `treeshake.moduleSideEffects:
   false`). Shows the bloat is **not** a side-effect-detection issue.
 
+Each folder's `dist/` build output is committed as-is (only `node_modules/`
+is gitignored), so you can inspect the actual results below without
+rebuilding anything first.
+
 ## Reproduce
+
+To rebuild from scratch (e.g. after changing a file):
 
 ```sh
 cd bug && npm install && npm run build
@@ -38,7 +44,8 @@ cd ../control && npm install && npm run build
 cd ../sidefx && npm install && npm run build
 ```
 
-Then compare the chunk containing `metas`:
+Or just inspect the committed output directly. Either way, compare the
+chunk containing `metas`:
 
 ```sh
 grep -o "Post A content" bug/dist/assets/*.js          # matches

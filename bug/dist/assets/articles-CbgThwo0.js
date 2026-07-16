@@ -1,0 +1,1 @@
+import{t as e}from"./index-Ck4Nuuj2.js";var t=Object.assign({"./posts/a.js":()=>e(()=>import(`./index-Ck4Nuuj2.js`).then(e=>e.r),[]),"./posts/b.js":()=>e(()=>import(`./index-Ck4Nuuj2.js`).then(e=>e.n),[])});export{t as articles};
